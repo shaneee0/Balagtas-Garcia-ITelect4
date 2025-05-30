@@ -15,6 +15,9 @@ class employeecontroller extends Controller
         return view ('employee.index');
     }
 
+
+    public function create()
+    {
     // employee::create($request->all());
     // return view ('employee.create');
     // }
@@ -23,6 +26,6 @@ class employeecontroller extends Controller
         
             // employee::findOrFail($id)->update($request->all());
             // return redirect ()->back()->with('status','Employee Updated Successfully!');
-            // }
+    }
 
 }
