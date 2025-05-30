@@ -23,6 +23,7 @@ class employeecontroller extends Controller
 
 
     public function store(Request $request){
+            
             employee::findOrFail($id)->update($request->all());
             return redirect ()->back()->with('status','Employee Updated Successfully!');
     }

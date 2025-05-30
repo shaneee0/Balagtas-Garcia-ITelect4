@@ -23,6 +23,10 @@ Route::middleware('auth')->group(function () {
     Route::get('employee', [\App\Http\Controllers\employeecontroller::class, 'index'])->name('employee.index');
     Route::post('store', [\App\Http\Controllers\employeecontroller::class, 'store'])->name('employee.store');
     Route::put('store', [\App\Http\Controllers\employeecontroller::class, 'store'])->name('employee.store');
+    Route::get('profile', [\App\Http\Controllers\employeecontroller::class, 'create'])->name('employee.create');
+    Route::get('employee', [\App\Http\Controllers\employeecontroller::class, 'store'])->name('employee.store'); //mukhang pede to working
+
+
 
 
     //end of employee management
